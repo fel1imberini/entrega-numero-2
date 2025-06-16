@@ -100,7 +100,7 @@ h2 {
 
 .section2__grid img{
     width: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
     
 }
 .img1{
@@ -134,19 +134,27 @@ h2 {
 }
 
 /* media query contacto */
-@media screen and (min-width: 768px) {
+
  
 
 form {
     
     display: flex;
     flex-direction: column;
-    font-size: 30px;
      font-family: "Pompiere", sans-serif; 
-     width: 500px;
      gap: 10px;
-     padding-left: 20px;
+     padding: 20px;
+     width: 500px;
+     font-size: 20px;
+     text-align: start;
  
+}
+
+@media screen and (min-width: 768px){
+
+form{
+  font-size: 30px;
+  width: 70%;
 }
 
 .main__contacto div{
@@ -155,9 +163,16 @@ form {
     
 }
 
+h4{
+   font-weight: 200px; 
+    margin: 10px;
+    text-align: left;
+}
+
   h5 {
     font-weight: 200px; 
     margin: 10px;
+    text-align: left;
   }
 }
 
