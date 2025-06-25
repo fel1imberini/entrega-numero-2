@@ -1,0 +1,104 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* navbar y logo de empresa */
+header{
+    background-color: $primary-color ;
+    height: 200px;
+    .logo__empresa{
+        width: 120px;
+    }
+    ul{
+        gap: 40px;
+        i{
+            color: black;
+            font-size: 30px;
+        }
+    }
+}
+
+/* index titulo */
+main{
+   grid-template-columns: 1fr;
+   text-align: center;
+   .section__grid img{
+    width: 80%;
+    }
+    .section__grid p{
+        font-size: small;
+    }
+}
+
+ 
+.div__section2{
+    background-color: $secondary-color;
+        h2{ 
+            text-align: start;
+            font-family: $font-principal;
+            font-weight: 600;
+            font-size: 60px;
+            color: whitesmoke;
+        }
+}
+
+ .div__tarjetas{
+        display: grid;
+        grid-template-columns: 1;
+        justify-items: center;
+        padding: 20px;
+        text-align: center;
+        div{
+            background-color: $secondary-color;
+            color: whitesmoke;  
+        }   
+        h4{
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+
+/* estilos para desktop */
+@media screen and (min-width: 1024px){
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+    .section__grid{
+        @include grid (grid, repeat(3, 1fr), 1);
+        padding: 2rem;
+        gap: 2rem;
+        img{
+            width: 350px;
+            border-radius: 10px;
+        }
+        div{
+            text-align: center;
+            padding: 20px;
+            margin: 0%;
+        }      
+    }
+
+      .div__section2{
+            h2{
+                font-size: 160px;
+                padding-left: 35px;
+            }
+        }
+
+    .div__tarjetas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  
+        padding: 20px 0px;
+        
+        img{
+            object-fit: cover;
+            height: 200px;
+        }
+    }
+
+    }
+
+
+footer{
+    background-color: rgb(17, 16, 16);
+}

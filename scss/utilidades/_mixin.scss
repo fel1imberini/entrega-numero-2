@@ -1,0 +1,26 @@
+@mixin grid($grid, $column, $row){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: start;
+    padding: 20px;
+    font-family: "Pompiere", sans-serif;
+}
+
+@mixin reset{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@mixin sizesubtitle{ 
+        font-weight: 200px;
+        margin: 10px;
+        text-align: left;
+}
