@@ -10,12 +10,17 @@
 .main__galeria{
     grid-template-columns: 1fr;
 }
-.section2__grid img{
+.section2__grid{
+     img{
     padding: 10px;
     width: 70%;
     border-radius: 30px;
 }
 
+video{
+    width: 90%;
+}
+}
     .imagenes2{
         color: whitesmoke;
         justify-items: center;
@@ -75,7 +80,6 @@
             font-weight: 600;
         }  
         img{
-            padding: 10px;
             width: 790px;
             border-radius: 30px;
         }
