@@ -77,6 +77,10 @@ main{
 /* estilos para desktop */
 @media screen and (min-width: 1024px){
     /* seccion principal desktop */
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
     h2{
         font-family: 'Times New Roman', Times, serif;
         text-align: center;
@@ -123,13 +127,14 @@ footer{
     color: whitesmoke;
     
     h1{
+        font-family: inherit;
         text-align: center;
     }
     h2{
         text-align: center;
     }
     i{
-       
+       color: $primary-color;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }

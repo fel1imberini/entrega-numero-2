@@ -69,6 +69,9 @@ main .section__grid p {
 /* estilos para desktop */
 @media screen and (min-width: 1024px) {
   /* seccion principal desktop */
+  h1 {
+    font-family: "Times New Roman", Times, serif;
+  }
   h2 {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
@@ -110,12 +113,14 @@ footer {
   color: whitesmoke;
 }
 footer h1 {
+  font-family: inherit;
   text-align: center;
 }
 footer h2 {
   text-align: center;
 }
 footer i {
+  color: rgb(255, 255, 255);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
