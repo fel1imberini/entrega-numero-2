@@ -26,6 +26,7 @@ main .section__grid img {
 main .section__grid p {
   font-size: small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
 }
 
 /* seccion 2, tarjetas con info */
@@ -58,6 +59,9 @@ main .section__grid p {
 
 /* estilos para tablet */
 @media screen and (min-width: 768px) {
+  main .section__grid p {
+    padding: 0 10px;
+  }
   .div__tarjetas {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -134,6 +138,9 @@ footer i {
 .section2__grid video {
   width: 90%;
 }
+.section2__grid p {
+  padding: 5px;
+}
 
 .imagenes2 {
   color: whitesmoke;
@@ -152,7 +159,20 @@ footer i {
   width: 70%;
   border-radius: 10px;
 }
+.imagenes2 p {
+  padding: 5px;
+  text-align: center;
+}
 
+/* meidaquery tablet */
+@media screen and (min-width: 768px) {
+  .section2__grid p {
+    font-size: 18px;
+  }
+  .imagenes2 p {
+    font-size: 18px;
+  }
+}
 /* mediaquery desktop galeria */
 @media screen and (min-width: 1024px) {
   .main__galeria {
@@ -170,7 +190,9 @@ footer i {
     grid-row: 2;
   }
   .section2__grid p {
-    font-size: 17px;
+    padding: 10px 5px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 20px;
     grid-column: 3;
     grid-row: 1;
     text-align: center;
@@ -183,7 +205,7 @@ footer i {
   }
   .imagenes2 {
     color: whitesmoke;
-    justify-items: center;
+    align-items: center;
     background-color: rgb(10, 9, 50);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -195,12 +217,13 @@ footer i {
     font-weight: 600;
   }
   .imagenes2 img {
-    width: 790px;
+    width: 780px;
     border-radius: 30px;
+    padding: 10px;
   }
   .imagenes2 p {
+    padding: 10px 5px;
     font-size: 30px;
-    text-align: center;
   }
   .imagenes2 .raquetas {
     grid-column: 1;

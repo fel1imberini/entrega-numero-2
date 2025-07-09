@@ -20,6 +20,10 @@
 video{
     width: 90%;
 }
+p{
+
+    padding: 5px;
+}
 }
     .imagenes2{
         color: whitesmoke;
@@ -35,9 +39,23 @@ video{
             width: 70%;
             border-radius: 10px;
         }
-   
+        p{
+            padding: 5px;
+            text-align: center;
+        }
     }
 
+/* meidaquery tablet */
+@media screen and (min-width: 768px){
+    .section2__grid p{
+        font-size: 18px;
+    }
+
+    .imagenes2 p{
+        font-size: 18px;
+    }
+} 
+    
 
 
 /* mediaquery desktop galeria */
@@ -56,11 +74,14 @@ video{
     }
 
     p{
-        font-size: 17px;
+        padding: 10px 5px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        font-size: 20px;
         grid-column: 3;
         grid-row: 1;
         text-align: center;
         margin: 10px;
+
     }
     video{
         grid-column: span 2;
@@ -71,7 +92,7 @@ video{
 
     .imagenes2{
         color: whitesmoke;
-        justify-items: center;
+        align-items: center;
         background-color: $secondary-color;
      @include grid(grid, repeat(2,1fr), repeat (3,1fr));
         H2{
@@ -80,14 +101,13 @@ video{
             font-weight: 600;
         }  
         img{
-            width: 790px;
+            width: 780px;
             border-radius: 30px;
+            padding: 10px;
         }
-        p{
-            
-            font-size: 30px;
-            text-align: center;
-
+        p{    
+            padding: 10px 5px;
+            font-size: 30px; 
         }
       .raquetas{
         grid-column: 1;
