@@ -10,8 +10,12 @@ header ul {
   gap: 40px;
 }
 header ul i {
-  color: rgb(10, 9, 50);
+  color: black;
   font-size: 30px;
+  transition: 0.3s;
+}
+header ul i:hover {
+  color: rgb(116, 205, 205);
 }
 
 /* index titulo */
@@ -121,7 +125,11 @@ footer h2 {
 }
 footer i {
   color: rgb(255, 255, 255);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  transition: 0.3s;
+}
+footer i:hover {
+  color: rgb(16, 12, 61);
 }
 
 * {
