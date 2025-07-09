@@ -10,12 +10,14 @@ header ul {
   gap: 40px;
 }
 header ul i {
+  display: inline-block;
   color: black;
   font-size: 30px;
   transition: 0.3s;
 }
 header ul i:hover {
-  color: rgb(116, 205, 205);
+  color: rgb(136, 146, 151);
+  transform: scale(1.4);
 }
 
 /* index titulo */
